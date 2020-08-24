@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class LoginPage {
 
-  private String url = "https://127.0.0.1:9999";
+  private String url = "http://127.0.0.1:9999";
   private SelenideElement login = $("[data-test-id=login] input");
   private SelenideElement password = $("[data-test-id=password] input");
   private SelenideElement but = $("[data-test-id=action-login]");
