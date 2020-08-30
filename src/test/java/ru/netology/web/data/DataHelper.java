@@ -1,9 +1,6 @@
 package ru.netology.web.data;
 
 import lombok.Value;
-import lombok.val;
-
-import java.lang.annotation.Annotation;
 
 public class DataHelper {
     private DataHelper() {
@@ -29,7 +26,6 @@ public class DataHelper {
     }
 
 
-
     public static VerificationCode getVerificationCode() {
         return new VerificationCode("12345");
     }
@@ -39,15 +35,15 @@ public class DataHelper {
     }
 
     public static String getCard1() {
-        return new String("5559 0000 0000 0001");
+        return "5559 0000 0000 0001";
     }
 
     public static String getCard2() {
-        return new String("5559 0000 0000 0002");
+        return "5559 0000 0000 0002";
     }
 
     public static String getInvalidCard() {
-        return new String("5559 0000 0000 0000");
+        return "5559 0000 0000 0000";
     }
 
     public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
